@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    /* background-color: #202124; Dark mode? */
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 200px;
+}
+
+
+.logo {
+    width: 272px;
+    height: 92px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Search box */
+
+.search-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-input-wrapper { /* Wrapper to put icon inside input */
+    position: relative;
+    width: 600px;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    opacity: 0.6;
+}
+
+#search-input {
+    width: 100%;
+    padding: 12px 12px 12px 45px;
+    border-radius: 25px;
+    border: 1px solid #dcdcdc;
+    outline: none;
+    font-size: 16px;
+}
+
+#search-input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.button-group { /* space between buttons */
+    display: flex;
+    gap: 10px;
+}
+
+
+button {
+    padding: 10px 20px;
+    margin: 20px;
+    border: none;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    border: 1px solid #dadce0;
+}
+
+
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  font-size: 14px;
+  width: 100%; 
+  position: relative; 
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+
+header a {
+  text-decoration: none;
+  color: #5f6368;
+  margin-right: 20px;
+}
+
+header a:last-child {
+  margin-right: 0;
+}
+
+.header-left,
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.icon-placeholder {
+  font-size: 18px;
+  margin-right: 20px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.icon-placeholder:hover {
+  opacity: 1;
+}
+
+.sign-in-btn {
+  background-color: #1a73e8;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sign-in-btn:hover {
+  background-color: #1669c1;
+}
+
+.icon-apps img {
+  width: 35px;
+  height: 35x;
+  cursor: pointer;
+  margin-right: 10px;
+  opacity: 0.7;
+}
+
+.icon-apps img:hover {
+  opacity: 1;
+}
+
+
+
+/* Footer */
+
+footer {
+    background-color: #f2f2f2;
+    padding: 15px 30px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer a {
+    text-decoration: none;
+    color: #5f6368;
+    margin-right: 20px;
+}
+
+footer a:last-child {
+    margin-right: 0;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-left,
+.footer-right {
+    display: flex;
+    gap: 20px;
+}
